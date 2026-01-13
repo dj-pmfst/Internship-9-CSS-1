@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.announcement{
+    background-color: #3C3C43;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale{
+    background-color: #d6ad7f;
+    display: flex;
+    justify-content: center;
+    size: 20em;
+}
+
+.sale img{
+    width: 80px;
+    height: 120px;
+}
+
+.highlights{
+    color:#3C3C43;
+    background-color: #fcf5ec;
+    display: flex;
+    justify-content: flex-start;
+}
