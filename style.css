@@ -1,12 +1,28 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    cursor: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color:#3C3C43;
 }
+
 .announcement{
     background-color: #3C3C43;
-    color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: white;    
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 0.8em;
+    padding-top: 5px;
+}
+a.announcement{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    margin-left: 0px;
 }
 
 .top{
@@ -24,13 +40,55 @@ body{
 }
 
 .sale img{
-    width: 80px;
-    height: 120px;
+    width: auto;
+    height: 25em;
 }
 
 .highlights{
-    color:#3C3C43;
     background-color: #fcf5ec;
     display: flex;
     justify-content: flex-start;
+}
+
+.essentials{
+    display: flex;
+}
+
+.explore{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.furniture{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.seasonal{
+    background-color: #fcf5ec;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.stories{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.stories img{
+    width: 40%;
+    height: auto;
+}
+
+.footer{
+    background-color: #3C3C43;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer img{
+    width: 4%;
+    height: auto;
 }
