@@ -83,8 +83,8 @@ body{
     background-color: #d6ad7f;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 8em;
+    padding-bottom: 8em;
     color: #7f0019;
 }
 
@@ -92,7 +92,21 @@ body{
     display: block;
     padding-right: 4em;
     padding-left: 3em;
-    font-size: 1.7em;
+}
+
+.sale_text h3 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.sale_text p {
+    margin: 0.1em 0;
+    margin-top: 3em;
+}
+
+.sale_text h4 {
+    margin: 0.15em 0;
+    font-size: 2.3em;
 }
 
 .sale img{
@@ -102,11 +116,17 @@ body{
 }
 
 .highlights{
-    background-color: #fcf5ec;
+    background-color: #fbf7f2;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 5em;
+    padding: 3em;
+    font-size: 18px;
+}
+
+.highlights h5{
+    margin: 0;
+    padding: 0.5em;
 }
 
 .highlights_scroll{
@@ -129,24 +149,32 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:5em;
+    margin: 5em;
 }
 
 .essentials img{
-    width: 75em;
-    height: 30em;
+    width: 85em;
+    height: 35em;
     object-fit: cover;
 }
 
 .explore{
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
-    margin: 8em;
+    margin: 5em;
+}
+
+.explore h5 {
+    align-self: flex-start;  
+}
+
+.explore > div,
+.explore img {
+    align-self: center; 
 }
 
 .explore img{
-    width: 25em;
+    width: 27em;
     height: auto;
     padding: 0.1em;
 }
@@ -154,21 +182,44 @@ body{
 .furniture{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 2em;
+    margin: 5em;
+}
+
+.furniture h5 {
+    align-self: flex-start;  
+}
+
+.furniture_header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1em;  
+}
+
+.furniture_header h5 {
+    margin: 0;
+}
+
+.furniture_img {
+    display: flex;
+    flex-direction: row;
+    align-self: center; 
 }
 
 .furniture img{
     width: auto;
-    height: 20em;
+    height: 25em;
 }
 
 .seasonal{
-    background-color: #fcf5ec;
+    background-color: #fbf7f2;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 18px;
 }
 
 .seasonal img{
@@ -177,15 +228,22 @@ body{
     padding: 0.3em;
 }
 
+.seasonal h5{
+    margin: 0;
+    padding: 0.5em;
+}
+
 .stories{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: flex-start;
+    margin: 6em;
 }
 
 .stories img{
-    width: 40%;
-    height: auto;
+    object-fit: cover;
+    width: 20em;
+    height: 25em;
 }
 
 .footer{
