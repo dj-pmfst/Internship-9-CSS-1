@@ -25,12 +25,21 @@ body{
     margin-left: 0px;
 }
 
+/* .header{
+    position: fixed;
+    background-color: white;
+    display: block;
+    display: flex;
+    flex-direction: column;
+} */
+
 .top{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 1em;
+    color: #3C3C43;
 }
 
 .search{
@@ -73,14 +82,17 @@ body{
 .sale{
     background-color: #d6ad7f;
     display: flex;
-    padding-top: 2em;
+    justify-content: space-evenly;
+    padding-top: 5em;
     padding-bottom: 5em;
     color: #7f0019;
 }
 
 .sale_text{
     display: block;
-    padding: 2em;
+    padding-right: 4em;
+    padding-left: 3em;
+    font-size: 1.7em;
 }
 
 .sale img{
@@ -97,48 +109,72 @@ body{
     padding: 5em;
 }
 
+.highlights_scroll{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
 .highlights img{
-    width: auto;
+    width: 20em;
     height: 20em;
     padding: 0.3em;
+}
+
+.cropped{
+    object-fit: cover;
 }
 
 .essentials{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    margin:5em;
 }
 
 .essentials img{
-    width: auto;
+    width: 75em;
     height: 30em;
+    object-fit: cover;
 }
 
 .explore{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding-left: 10em;
-    padding-right: 10em;
+    margin: 8em;
 }
 
 .explore img{
     width: 25em;
     height: auto;
-    padding: 0.3em;
+    padding: 0.1em;
 }
 
 .furniture{
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
+    padding: 2em;
+}
+
+.furniture img{
+    width: auto;
+    height: 20em;
 }
 
 .seasonal{
     background-color: #fcf5ec;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
+    padding: 5em;
+}
+
+.seasonal img{
+    width: auto;
+    height: 20em;
+    padding: 0.3em;
 }
 
 .stories{
