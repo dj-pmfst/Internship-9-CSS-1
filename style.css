@@ -11,6 +11,7 @@ body{
     color:#3C3C43;
 }
 
+
 a{
     position: relative;
     text-decoration: none;
@@ -39,6 +40,12 @@ a::after {
 
 a:hover::after {
     width: 100%;
+}
+
+.announcement a,
+.essentials-link,
+.footer a {
+    color: white;
 }
 
 .sale a::after,
@@ -168,6 +175,10 @@ a:hover .explore_link::after {
 .logo img{
     width: auto;
     height: 2em;
+}
+
+.logo a::after{
+    display: none;
 }
 
 .icons img{
