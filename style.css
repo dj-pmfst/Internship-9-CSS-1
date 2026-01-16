@@ -103,6 +103,19 @@ a:hover::after {
     height: 2em;
 }
 
+.icons img{
+    width: 1.8rem;
+}
+
+.icons a:hover{
+    text-decoration: none;
+    opacity: 60%;
+}
+
+.icons a::after {
+    display: none; 
+}
+
 .bottom{
     font-size: 1rem;
     line-height: 150%;
