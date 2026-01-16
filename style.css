@@ -86,6 +86,7 @@ a:hover::after {
     border: none;
     float: left;
     font-size: 1em;
+    outline: none;
 }
 
 .logo{
@@ -255,6 +256,16 @@ a:hover::after {
     padding: 0.1em;
 }
 
+.explore_link {
+    bottom: 20px;  
+    left: 20px;    
+    top: auto;     
+    transform: none;  
+    font-size: 1.1em;
+    font-weight: bold;
+    filter: none;
+}
+
 .furniture{
     display: flex;
     flex-direction: column;
@@ -323,6 +334,10 @@ a:hover::after {
     margin: 0.2em;
 }
 
+.stories a:hover{
+    color: #7f0019;
+}
+
 .footer{
     background-color: #3C3C43;
     color: white;
@@ -334,4 +349,13 @@ a:hover::after {
 .footer img{
     width: 4%;
     height: auto;
+}
+
+.sale_link{
+    bottom: 30px;
+    left: 50%;
+    top: auto;
+    transform: translateX(-50%);  
+    font-size: 1.1em;
+    font-weight: bold;
 }
