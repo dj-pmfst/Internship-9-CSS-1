@@ -1,3 +1,7 @@
+html, body {
+    width: 100%;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     cursor: auto;
@@ -145,7 +149,7 @@ a:hover .explore_link::after {
 }
 
 .search img{
-    width: 20px;
+    width: 1.2em;
     height: auto;
     padding-right: 0.8em;
     padding-bottom: 0.2em;
@@ -605,3 +609,225 @@ a:hover .explore_link::after {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .sticky_nav {
+        position: static;
+        top: unset;
+        filter: none;
+    }
+
+    .sticky_nav .top {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .logo {
+        padding: 0;
+        justify-self: center;
+    }
+
+    .logo img {
+        height: 1.6em;
+        width: auto;
+    }
+
+    .search {
+        border-bottom: none;
+    }
+
+    .search input {
+        display: none;
+    }
+
+    .search img {
+        padding: 0.5rem;
+        width: 1.4rem;
+    }
+
+    .icons a:nth-child(n+4) {
+        display: none;
+    }
+
+    .icons img {
+        width: 1.4rem;
+    }
+
+    .icons a {
+        padding: 0.5rem;
+    }
+
+    .sticky_nav .bottom {
+        display: none;
+    }
+
+    .announcement {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .announcement marquee {
+        width: 100%;
+    }
+
+    .sale {
+        flex-direction: column;
+        padding: 3em 1em;
+        gap: 2em;
+        overflow-x: hidden;
+    }
+
+    .sale img {
+        height: auto;
+        width: 100%;
+    }
+
+    .highlights {
+        padding: 2em 1em;
+    }
+
+    .highlights_scroll {
+        display: flex;
+        gap: 1em;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .highlights img {
+        width: 16em;
+        height: 16em;
+        flex-shrink: 0;
+    }
+
+    .essentials {
+        margin: 2em 0;
+        padding: 0 1em;
+        overflow-x: hidden;
+    }
+
+    .essentials img {
+        width: 100%;
+        height: auto;
+    }
+
+    .essentials-link {
+        font-size: 1rem;
+    }
+
+    .explore {
+        margin: 2em 1em;
+    }
+
+    .explore img {
+        width: 100%;
+        height: auto;
+    }
+
+    .furniture {
+        margin: 2em 1em;
+    }
+
+    .furniture_img {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .image-container {
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .img-default,
+    .img-hover {
+        width: 100%;
+        height: auto;
+    }
+
+    .seasonal {
+        padding: 2em 1em;
+    }
+
+    .seasonal .highlights_scroll {
+        overflow-x: auto;
+        gap: 1em;
+    }
+
+    .highlights_scroll a,
+    .seasonal .highlights_scroll a {
+        flex: 0 0 auto;  
+        width: 16rem;      
+    }
+
+    .highlights_scroll img,
+    .seasonal .highlights_scroll img {
+        width: 100%;
+        height: 16rem;
+        object-fit: cover;
+    }
+
+    .stories .highlights_scroll {
+        display: block;
+    }
+
+    .stories .highlights_scroll a {
+        display: block;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .stories img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .stories {
+        margin: 2em 1em;
+        overflow-x: hidden;
+    }
+
+    .stories img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 2em;
+        padding: 2em 1em;
+    }
+
+    .footer_block {
+        width: 100%;
+    }
+
+    .footer_logo {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+        padding: 2em 1em;
+    }
+
+    .footer_logo img {
+        padding: 0;
+    }
+}
