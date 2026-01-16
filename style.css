@@ -37,7 +37,7 @@ a:hover::after {
     color: white;    
     white-space: nowrap;
     font-weight: 400;
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding-top: 5px;
 }
 .announcement a{
@@ -73,18 +73,22 @@ a:hover::after {
 }
 
 .search{
-    display: block;
+    display: flex;
     position: relative;
     box-sizing: border-box;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
     align-items: center;
     border-bottom: 1px solid rgb(197, 193, 193);
 }
 
+.search img{
+    width: 20px;
+    height: auto;
+    padding-right: 0.8em;
+    padding-bottom: 0.2em;
+}
+
 .search input[type=text]{
     border: none;
-    float: left;
     font-size: 1em;
     outline: none;
 }
@@ -92,6 +96,7 @@ a:hover::after {
 .logo{
     padding: 0 2em;
 }
+
 .logo img{
     width: auto;
     height: 2em;
@@ -153,6 +158,7 @@ a:hover::after {
     flex-direction: column;
     justify-content: flex-start;
     padding: 3em;
+    padding-right: 0;
     font-size: 18px;
 }
 
@@ -165,6 +171,7 @@ a:hover::after {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .highlights img{
@@ -306,6 +313,7 @@ a:hover::after {
     padding: 5em;
     padding-top: 2em;
     padding-bottom: 2em;
+    padding-right: 0;
     font-size: 18px;
 }
 
@@ -331,7 +339,7 @@ a:hover::after {
     object-fit: cover;
     width: 20em;
     height: 25em;
-    margin: 0.2em;
+    padding-right: 0.4em;
 }
 
 .stories a:hover{
@@ -343,12 +351,64 @@ a:hover::after {
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    padding: 5em;
+    line-height: 1.7;
+}
+
+.footer_block{
+    width: 300px;
+    /* padding: 2em; */
+}
+
+.footer h4{
+    font-size: 18px;
 }
 
 .footer img{
     width: 4%;
     height: auto;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer ul li {
+    margin-bottom: 0.8em;
+}
+
+.footer input{
+    height: 2.2em;
+    width: 12em;
+    font-size: 17px;
+    border: none; 
+    outline: none;  
+    vertical-align: top;
+}
+
+.footer button{
+    color: rgb(232, 230, 230);
+    background-color: #7f0019;
+    width: 2.7em;
+    height: 3em;  
+    border: none; 
+    cursor: pointer; 
+    vertical-align: top;  
+    margin-left: -4px; 
+}
+
+.footer a::after {
+    display: none; 
+}
+
+.footer a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
 .sale_link{
