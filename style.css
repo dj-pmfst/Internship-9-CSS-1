@@ -352,12 +352,12 @@ a:hover::after {
     display: flex;
     flex-direction: row;
     padding: 5em;
+    padding-top: 2.2em;
     line-height: 1.7;
 }
 
 .footer_block{
     width: 300px;
-    /* padding: 2em; */
 }
 
 .footer h4{
@@ -409,6 +409,41 @@ a:hover::after {
 .footer a:hover{
     text-decoration: underline;
     text-decoration-color: white;
+}
+
+.footer_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3C3C43;
+    color: white;
+    font-size: .875rem;
+    padding: 5em;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.footer_logo img{
+    width: 64px;
+    height: auto;
+    padding-right: 2em;
+    padding-left: 4em;
+}
+
+.footer_logo::before{
+    content: '';
+    flex: 1;  
+    height: 0.09px;
+    background-color: white;
+}
+.footer_logo::after{
+    content: '';
+    flex: 1;  
+    height: 0.09px;
+    background-color: white;
+    margin-left: 4em;
 }
 
 .sale_link{
