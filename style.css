@@ -7,11 +7,19 @@ body{
     color:#3C3C43;
 }
 
-a {
+a{
     position: relative;
     text-decoration: none;
     display: inline-block;
     color: #3C3C43;
+}
+
+a img {
+    display: block; 
+}
+
+a img::after {
+    display: none;  
 }
 
 a::after {
@@ -27,6 +35,61 @@ a::after {
 
 a:hover::after {
     width: 100%;
+}
+
+.sale a::after,
+.explore a::after {
+    display: none;  
+}
+
+.sale_link,
+.explore_link {
+    position: absolute;
+}
+
+.sale_link::after,
+.explore_link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: #7f0019;
+    transition: width 0.3s ease;
+}
+
+a:hover .sale_link::after,
+a:hover .explore_link::after {
+    width: 100%;
+}
+
+
+.highlights h5,
+.seasonal h5 {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0.5em;
+    padding-bottom: 0.8em;
+}
+
+.highlights h5::after,
+.seasonal h5::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0.3em;  
+    left: 0.5em;  
+    right: 0.5em;   
+    background-color: #7f0019;
+    transition: width 0.3s ease;
+}
+
+.highlights a:hover h5::after,
+.seasonal a:hover h5::after {
+    width: calc(100% - 1em); 
 }
 
 .announcement{
@@ -176,11 +239,6 @@ a:hover::after {
     font-size: 18px;
 }
 
-.highlights h5{
-    margin: 0;
-    padding: 0.5em;
-}
-
 .highlights_scroll{
     display: flex;
     flex-direction: row;
@@ -252,8 +310,8 @@ a:hover::after {
     font-weight: bold;
 }
 
-.essentials-link:hover {
-    text-decoration-color: #7f0019;
+.essentials a::after{
+    display: none;
 }
 
 .explore{
@@ -390,6 +448,18 @@ a:hover::after {
     padding-left: 1rem;
 }
 
+.furniture-item a::after {
+    display: none;
+}
+
+.furniture-item p:hover {
+    color: #3c3c43b6;
+}
+
+.furniture-item p::after {
+    display: none;
+}
+
 .seasonal{
     background-color: #fbf7f2;
     display: flex;
@@ -406,11 +476,6 @@ a:hover::after {
     width: auto;
     height: 20em;
     padding: 0.3em;
-}
-
-.seasonal h5{
-    margin: 0;
-    padding: 0.5em;
 }
 
 .stories{
@@ -539,3 +604,4 @@ a:hover::after {
     font-size: 1.1em;
     font-weight: bold;
 }
+
