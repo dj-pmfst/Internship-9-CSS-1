@@ -7,6 +7,28 @@ body{
     color:#3C3C43;
 }
 
+a {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    color: #3C3C43;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #7f0019;
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
 .announcement{
     background-color: #3C3C43;
     display: flex;
@@ -80,6 +102,7 @@ body{
     font-weight: 400;
     display: flex;
     justify-content: center;
+    padding-bottom: 0.5em;
 }
 
 .bottom a{
@@ -181,6 +204,7 @@ body{
     text-decoration: none;
     z-index: 10;
     filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
+    display: block;
 }
 
 .title {
@@ -207,9 +231,7 @@ body{
 }
 
 .essentials-link:hover {
-    text-decoration: underline;
     text-decoration-color: #7f0019;
-    text-decoration-thickness: 3px;
 }
 
 .explore{
@@ -305,6 +327,7 @@ body{
     background-color: #3C3C43;
     color: white;
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
